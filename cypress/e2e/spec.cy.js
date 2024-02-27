@@ -1,5 +1,5 @@
-describe('login', () => {
+describe('login test', () => {
   it('testlogin', () => {
-    cy.login();
+    cy.signin()
   })
 })
