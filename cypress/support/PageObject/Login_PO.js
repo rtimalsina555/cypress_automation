@@ -38,6 +38,7 @@ class Login_PO{
     }
     showIntegration(){
         cy.get('ul li').contains("Integrations").should('include.text','Integrations').click({timeout:10000});
+        return this;
     }
 
     
