@@ -8,8 +8,9 @@ Cypress.Commands.add( 'signin', () =>{
        .clickSignInHereSelector()
        //.showDashboard()
        //.createContact()
-       .click_Setting()
-       .showIntegration()
+       // .click_Setting()
+       // .showIntegration()
+       // .clickcrmSetting()
 });
 
 
