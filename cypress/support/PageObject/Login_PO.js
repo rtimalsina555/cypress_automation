@@ -13,11 +13,13 @@ class Login_PO{
         return this;
     }
     clickSignInButton() {
-        cy.get('[data-cy="login-form-submit"]').should("be.visible").click();
+        cy.get('[data-cy="login-form-submit"]').should("be.visible");
+        cy.get('[data-cy="login-form-submit"]').should('have.text', "Sign In").click();
         return this;
     }
     clickSignInHereSelector(){
-        cy.get('[data-cy="login-modal-submit"] > span').click({timeout:45000});
+        cy.get('[data-cy="login-modal-submit"]').should("be.visible");
+        cy.get('[data-cy="login-modal-submit"]').should('have.text', 'Sign in here').click();
         cy.wait(10000);
         return this;       
     }

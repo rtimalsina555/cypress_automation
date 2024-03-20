@@ -10,6 +10,6 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx}",
   },
-  "pageLoadTimeout": 300000, //time out set to 5 minutes
+  "pageLoadTimeout": 30000, //time out set to 30 seconds
 });
 
