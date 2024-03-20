@@ -1,7 +1,7 @@
 describe('login test', () => {
   it('testlogin', () => {
     cy.signin();
-    cy.wait(60000);
+    cy.wait(6000);
     //Dashboard
     cy.get('a[href="/dashboard"]').should('have.text', 'Dashboard').click();
     cy.url().should('contain', 'https://qa.safefamilyapp.com/dashboard');
